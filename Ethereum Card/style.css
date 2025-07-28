@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.card-image {
+    max-width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: white;
+    font-size: 18px;
+    padding: 25px 0;
+}
+
+.card-description{
+    color: hsl(215, 21%, 45%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-stats {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* So it fills the padded space of .card */
+}
+
+
+.card-price{
+    display: flex;
+    gap: 10px;
+}
+
+.card-price span{
+    color: hsl(178, 100%, 50%);
+}
+
+.card-time{
+    display: flex;
+    gap: 10px;
+}
+
+.card-time span{
+    color: hsl(215, 51%, 70%);
+}
+
+hr{
+    width: 100%;
+    border: 1px solid hsl(215, 51%, 70%) ;
+}
+
+.credits{
+    padding: 20px 0px 0px 0px;
+    font-size: 25px;
+    color: white;
+}
+
+.credits span{
+    font-family: "Bitcount Prop Single";
+    padding-inline-start: 10px;
+}
