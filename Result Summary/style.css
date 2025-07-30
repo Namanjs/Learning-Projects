@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: Hanken Grotesk;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container{
+    background-color: white;
+    display: flex;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.blue-container {
+    background: linear-gradient(180deg, hsl(256, 72%, 46%) 0%, hsl(241, 81%, 54%) 100%);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 25px;
+    /* margin-inline-end: 30px; */
+}
+
+.result{
+    color: white;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.score-circle{
+    background: linear-gradient(180deg,  hsl(241, 81%, 54%)  0%, hsl(256, 72%, 46%) 100%);
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-block-end: 20px;
+}
+
+.score{
+    color: white;
+}
+
+.max-score{
+    color: white;
+    font-weight: 100;
+}
+
+.views{
+    color: white;
+    margin-block-end: 20px;
+}
+
+.stats{
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+.summary-container{
+    width: 350px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: start;
+    padding: 25px 30px ;
+    gap: 20px;
+}
+
+.summary-point{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-points{
+    display: flex;
+    gap: 10px;
+}
+
+.reaction{
+    background-color: hsl(0, 77%, 95%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.memory{
+    background-color: hsl(39, 94%, 93%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.verbal{
+    background-color: hsl(167, 100%, 93%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.visual{
+    background-color: hsl(233, 100%, 92%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.continue{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(224, 30%, 27%);
+    height: 35px;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
