@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    font-family: "Noto Sans";
+    padding: 40px 90px;
+}
+
+.search-icons{
+    display: flex;
+    justify-content: space-between;
+    background-color:hsl(226, 12%, 21%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sun-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 17%, 25%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 0px;
+}
+
+.navigation-tabs{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-tabs a{
+    text-decoration: none;
+    color: white;
+    background-color:hsl(226, 12%, 21%);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.extension-row-1{
+    display: flex;
+    gap: 15px;
+    padding: 7.5px;
+}
+
+
+.extension-rec{
+    min-height: 200px;
+    width: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 30px;
+    background-color: hsl(229, 23%, 18%);
+    border-radius: 20px;
+    justify-content: space-between  ;
+}
+
+.extension-rec-inner{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.extension-rec-inner img{
+    height: 70px;
+}
+
+.extension-rec-inner div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.remove button{
+    color: white;
+    background-color: hsl(229, 23%, 18%);
+    margin: 0px 0px 20px 30px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 2px;
+}
+
+@media (max-width: 880px) {
+  body {
+    padding: 30px;
+  }
+
+  .extension-row-1 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .remove button {
+    margin: 20px 20px;
+    align-self: flex-end;
+  }
+
+  .extension-rec-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navigation-tabs {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
